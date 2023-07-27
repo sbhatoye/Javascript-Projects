@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #9796f0, #fbc7d4);
+  height: 100vh;
+}
+
+.main_container {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.quote_container {
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border: 3px solid purple;
+  border-radius: 20px;
+  padding: 0 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+}
+
+.quote_container p {
+  color: purple;
+  font-size: 1.9rem;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  height: 9%;
+}
+
+button {
+  border-radius: 5px;
+  display: flex;
+  background-color: purple;
+  color: aliceblue;
+  transition: 0.3s ease-in;
+  padding: 10px 20px;
+  align-items: center;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid purple;
+  color: purple;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .quote_container p {
+    font-size: 1.8rem;
+  }
+
+  .button_container {
+    height: 10%;
+  }
+
+  button {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+  button {
+    font-size: 1.3rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .button_container {
+    height: 9%;
+  }
+
+  button {
+    font-size: 1.3rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .quote_container p {
+    font-size: 2.2rem;
+  }
+
+  .button_container {
+    height: 10%;
+  }
+
+  button {
+    font-size: 1.5rem;
+    width: 20%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1600px) {
+  .quote_container {
+    width: 95%;
+  }
+}
