@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Devil Wears Prada</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="/resources/images/logo2.png"
+          alt="Vogue magazine logo with black letters and white background"
+        />
+      </div>
+      <div id="menu">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#mood_board">Mood Board</a>
+          <a href="#collection">Collection</a>
+          <a href="#ratings">Ratings</a>
+          <a href="#comments">Comments</a>
+        </nav>
+      </div>
+    </header>
+    <section class="home_container" id="home">
+      <div id="cover_image">
+        <img
+          src="resources/images/vogue-cover.jpg"
+          alt="Art magazine cover for Vogue with model in red gown"
+        />
+      </div>
+      <div id="enter_button">
+        <a href="#mood_board"><button>Enter</button></a>
+      </div>
+    </section>
+    <section class="mood_board_container" id="mood_board">
+      <h2>Mood Board</h2>
+      <div class="mood_images">
+        <div class="image_fade">
+          <img
+            src="/resources/images/img1.jpg"
+            alt="Fashion collage inspired by Chanel, Marilyn Monroe, and Audrey Hepburn."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="/resources/images/img2.jpg"
+            alt="Woman wearing red gown, overlooking cityscape."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="/resources/images/img3.jpg"
+            alt="Vogue editorial shot in the garden with a picnic scene. Featuring a retro and vintage theme."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="/resources/images/img4.jpg"
+            alt="Woman in white gown standing on the edge of an infinity pool with mountains fading into the background."
+          />
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="left_arrow" id="mood_left_arrow">
+          <i
+            id="prev"
+            class="fa-regular fa-circle-left"
+            style="color: #ffffff"
+          ></i>
+        </div>
+        <div class="right_arrow" id="mood_right_arrow">
+          <i
+            id="next"
+            class="fa-regular fa-circle-right"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </div>
+    </section>
+    <section class="collection_container" id="collection">
+      <h2>Fall Collection</h2>
+      <div class="outfit_images">
+        <div class="image_fade">
+          <img
+            src="resources/images/outfit1.jpg"
+            alt="Sketch of model wearing a white sleeveless top with peach skirt. Both garments covered in black, speck-like pattern."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="resources/images/outfit2.jpg"
+            alt="Sketch of model wearing a short-sleeved sheer gown with a short black cami and black shorts underneath. Gown has vibrant flower patterns all over and model is wearing a matching flower headpiece."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="resources/images/outfit3.jpg"
+            alt="Sketch of model wearing a blue dress with frills and embellished embroidery. Top portion of gown is shear with long sleeves lined with frills."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="resources/images/outfit4.jpg"
+            alt="Sketch of model wearing a black long-sleeved gown with a middle slit."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="resources/images/outfit5.jpg"
+            alt="Sketch of model wearing a long, pink and green gown with a large flower design on one shoulder."
+          />
+        </div>
+        <div class="image_fade">
+          <img
+            src="resources/images/outfit6.jpg"
+            alt="Sketch of model wearing a strapless pink gown with large frills on the bottom and a big pink bow around the waist."
+          />
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="left_arrow" id="outfit_left_arrow">
+          <i
+            id="prev"
+            class="fa-regular fa-circle-left"
+            style="color: #ffffff"
+          ></i>
+        </div>
+        <div class="right_arrow" id="outfit_right_arrow">
+          <i
+            id="next"
+            class="fa-regular fa-circle-right"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </div>
+    </section>
+    <section class="ratings_container" id="ratings">
+      <h2>Ratings</h2>
+      <div class="counter_container">
+        <div class="counter">
+          <h3 class="rating_heading">Design</h3>
+          <h3 class="count" id="design_rating">0</h3>
+          <div class="rating_buttons">
+            <button class="increase" id="design_increase">Increase</button>
+            <button class="decrease" id="design_decrease">Decrease</button>
+          </div>
+        </div>
+        <div class="counter">
+          <h3 class="rating_heading">Style</h3>
+          <h3 class="count" id="style_rating">0</h3>
+          <div class="rating_buttons">
+            <button class="increase" id="style_increase">Increase</button>
+            <button class="decrease" id="style_decrease">Decrease</button>
+          </div>
+        </div>
+        <div class="counter">
+          <h3 class="rating_heading">Pattern</h3>
+          <h3 class="count" id="pattern_rating">0</h3>
+          <div class="rating_buttons">
+            <button class="increase" id="pattern_increase">Increase</button>
+            <button class="decrease" id="pattern_decrease">Decrease</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comments_container" id="comments">
+      <h2>Comments</h2>
+      <div id="comment_box">
+        <label for="comment"><h3>Leave a comment below</h3></label>
+        <br />
+        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+        <br />
+        <button id="submit">Submit</button>
+        <br />
+        <div class="display_comments"></div>
+      </div>
+    </section>
+    <section class="signature_container" id="signature">
+      <div id="miranda_priestly_image">
+        <img
+          src="resources/images/miranda-priestly-image.jpg"
+          alt="Meryl Streep as Miranda Priestly, sitting and reading magazines at her office desk and giving someone an intense look."
+        />
+      </div>
+      <div id="sign-off">
+        <img
+          src="resources/images/thats-all.png"
+          alt="Fancy purple font displaying 'That's all'"
+          id="thats-all"
+        />
+        <img
+          src="resources/images/xoxo.png"
+          alt="Fancy red font displaying 'XOXO'"
+          id="xoxo"
+        />
+        <img
+          src="resources/images/signature.png"
+          alt="Fancy cursive purple font displaying 'Miranda Priestly'"
+          id="mp-signature"
+        />
+      </div>
+    </section>
+  </body>
+</html>
