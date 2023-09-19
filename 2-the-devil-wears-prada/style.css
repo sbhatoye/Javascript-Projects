@@ -1,0 +1,798 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 0.3rem;
+  color: #e73c35;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  color: #e73c35;
+}
+
+nav a:visited {
+  color: #e73c35;
+}
+
+nav a:hover {
+  color: black;
+}
+
+#logo img {
+  margin-right: 41rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+}
+
+#home {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#cover_image img {
+  height: 25rem;
+  width: 18rem;
+  margin-top: 4rem;
+}
+
+#enter_button button {
+  background-color: black;
+  color: #e73c35;
+  border: 2px solid #e73c35;
+  padding: 7px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+#enter_button button:hover {
+  border: white solid 2px;
+  color: white;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.mood_board_container {
+  background-color: #e73c35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.collection_container {
+  background-color: #f39f61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mood_board_container h2 {
+  margin-top: 2rem;
+  color: white;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.collection_container h2 {
+  margin-top: 2rem;
+  color: white;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.mood_images {
+  height: 27rem;
+  width: 46rem;
+  background-image: url(/resources/images/img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+  margin-top: 2rem;
+  display: flex;
+  border: 2px solid white;
+}
+
+.outfit_images {
+  height: 30rem;
+  width: 19rem;
+  background-image: url(/resources/images/outfit1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+  margin-top: 3rem;
+  display: flex;
+  border: 2px solid white;
+}
+
+.image_fade img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.left_arrow,
+.right_arrow {
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.left_arrow {
+  margin-right: 2.5rem;
+}
+
+.right_arrow {
+  margin-left: 2.5rem;
+}
+
+#ratings {
+  background-color: #ebc258;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#ratings h2 {
+  color: black;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.counter {
+  border: 5px solid black;
+  width: 19rem;
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+  border-radius: 5px;
+  background-color: #f3e3bc;
+  margin: 0 2rem;
+}
+
+.counter h3 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.count {
+  font-size: 5rem;
+}
+
+.counter_container {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5rem;
+}
+
+.increase,
+.decrease {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  padding: 7px 20px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+  text-transform: uppercase;
+}
+
+.counter button:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+#comments {
+  background-color: #39074e;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#comments h2 {
+  color: white;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+#comment_box {
+  background-color: #cbdcf8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  height: 25rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+#comment_box textarea {
+  width: 25rem;
+  height: 6rem;
+}
+
+#comment_box label h3 {
+  font-family: sans-serif;
+  color: #39074e;
+}
+
+#submit {
+  background-color: transparent;
+  color: #39074e;
+  border: 2px solid #39074e;
+  padding: 7px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+#submit:hover {
+  background-color: #39074e;
+  color: white;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.display_comments {
+  color: #39074e;
+  font-style: italic;
+  font-size: 1rem;
+  font-family: sans-serif;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+  /* prevents scrollbar from covering text */
+  padding-right: 3rem;
+}
+
+.signature_container {
+  background-color: #cbdcf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+#miranda_priestly_image {
+  border-radius: 50%;
+  overflow: hidden;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  border: 2px solid #39074e;
+}
+
+#miranda_priestly_image img {
+  height: 20rem;
+  width: 30rem;
+}
+
+#sign-off {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 42rem;
+  margin-bottom: 5rem;
+}
+#sign-off #thats-all {
+  height: 5rem;
+  width: 10rem;
+}
+
+#sign-off #xoxo {
+  height: 6rem;
+  width: 8rem;
+}
+
+/* Media Queries */
+
+/* mobile/tablet touch vs click queries */
+@media (min-width: 200px) and (max-width: 1023px) {
+  /* no mouse click in mobile view */
+  nav a:hover {
+    color: #e73c35;
+  }
+
+  #enter-button button:hover {
+    background-color: black;
+    color: #e73c35;
+    border: 2px solid #e73c35;
+  }
+
+  #logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menu nav {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  nav a {
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  #logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7.5rem;
+  }
+
+  #cover_image img {
+    height: 24rem;
+    width: 17rem;
+    margin-top: 4rem;
+  }
+
+  .mood_images {
+    height: 11.5rem;
+    width: 19.5rem;
+  }
+
+  .counter_container {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .counter {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+
+  .count {
+    font-size: 2rem;
+  }
+
+  .rating_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .increase,
+  .decrease {
+    font-size: 0.7rem;
+    padding: 7px 10px;
+    margin-top: 0.5rem;
+  }
+
+  #ratings h2 {
+    margin-top: 2.5rem;
+  }
+
+  #comment_box {
+    width: 18rem;
+    height: 20rem;
+  }
+
+  #comment_box textarea {
+    width: 16rem;
+    height: 6rem;
+  }
+
+  .signature_container {
+    flex-direction: column;
+  }
+
+  #sign-off {
+    display: contents;
+  }
+
+  #miranda_priestly_image img {
+    height: 12rem;
+    width: 18rem;
+  }
+
+  #sign-off #thats-all {
+    height: 3rem;
+    width: 7rem;
+  }
+
+  #sign-off #xoxo {
+    height: 4rem;
+    width: 5rem;
+  }
+
+  #sign-off #mp-signature {
+    height: 3rem;
+    width: 14rem;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 550px) {
+  .mood_images {
+    height: 14rem;
+    width: 24rem;
+  }
+
+  #comment_box {
+    width: 22rem;
+    height: 20rem;
+  }
+
+  #comment_box textarea {
+    width: 18rem;
+    height: 6rem;
+  }
+
+  #miranda_priestly_image img {
+    height: 13rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .mood_images {
+    height: 17rem;
+    width: 29rem;
+  }
+
+  #comment_box {
+    width: 28rem;
+    height: 20rem;
+  }
+
+  #comment_box textarea {
+    width: 24rem;
+    height: 6rem;
+  }
+
+  #miranda_priestly_image img {
+    height: 16rem;
+    width: 24rem;
+  }
+
+  #sign-off #thats-all {
+    height: 4rem;
+    width: 9rem;
+  }
+
+  #sign-off #xoxo {
+    height: 5rem;
+    width: 7rem;
+  }
+
+  #sign-off #mp-signature {
+    height: 4rem;
+    width: 17rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  #menu nav {
+    font-size: 0.85rem;
+    margin-top: 3rem;
+  }
+
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+  .mood_images {
+    height: 20rem;
+    width: 35rem;
+  }
+
+  .counter {
+    width: 11rem;
+    height: 15rem;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7em;
+  }
+
+  .count {
+    font-size: 4rem;
+  }
+
+  .increase,
+  .decrease {
+    font-size: 0.7rem;
+    padding: 7px 10px;
+    margin-top: 0.5rem;
+  }
+
+  .decrease {
+    margin-bottom: 1rem;
+  }
+
+  .rating_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #comment_box {
+    width: 35rem;
+    height: 20rem;
+  }
+
+  #comment_box textarea {
+    width: 28rem;
+    height: 6rem;
+  }
+
+  .signature_container {
+    flex-direction: column;
+  }
+
+  #sign-off {
+    display: contents;
+  }
+
+  #miranda_priestly_image img {
+    height: 16rem;
+    width: 24rem;
+  }
+
+  #sign-off #thats-all {
+    height: 4rem;
+    width: 9rem;
+  }
+
+  #sign-off #xoxo {
+    height: 5rem;
+    width: 7rem;
+  }
+
+  #sign-off #mp-signature {
+    height: 4rem;
+    width: 17rem;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 900px) {
+  .counter {
+    width: 14rem;
+    height: 15rem;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7em;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+  .mood_images {
+    height: 26rem;
+    width: 45rem;
+  }
+
+  .counter {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .rating_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .decrease {
+    margin-bottom: 0rem;
+    margin-left: 0.7rem;
+  }
+
+  #miranda_priestly_image img {
+    height: 20rem;
+    width: 30rem;
+  }
+
+  #sign-off #thats-all {
+    height: 5rem;
+    width: 11rem;
+  }
+
+  #sign-off #xoxo {
+    height: 6rem;
+    width: 8rem;
+  }
+
+  #sign-off #mp-signature {
+    height: 5rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .counter {
+    width: 19.5rem;
+    height: 19rem;
+    margin: 0 1rem;
+  }
+
+  .increase,
+  .decrease {
+    margin: 1rem 0.2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  #menu nav {
+    font-size: 1.4rem;
+  }
+
+  #cover_image img {
+    height: 30rem;
+    width: 22rem;
+  }
+
+  #enter_button button {
+    height: 3rem;
+    width: 8rem;
+  }
+
+  #mood_board h2 {
+    font-size: 3rem;
+  }
+
+  .mood_images {
+    height: 35rem;
+    width: 60rem;
+  }
+
+  .left_arrow,
+  .right_arrow {
+    font-size: 2rem;
+  }
+
+  #collection h2 {
+    font-size: 3rem;
+  }
+
+  .outfit_images {
+    height: 40rem;
+    width: 25rem;
+  }
+
+  #ratings h2 {
+    font-size: 3rem;
+  }
+
+  .counter {
+    width: 25rem;
+    height: 24rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .increase,
+  .decrease {
+    margin: 1rem 0.9rem;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1rem;
+  }
+
+  .count {
+    font-size: 8rem;
+  }
+
+  .rating_heading {
+    font-size: 1.8rem;
+  }
+
+  #comments h2 {
+    font-size: 3rem;
+  }
+
+  #comment_box {
+    width: 60rem;
+    height: 30rem;
+  }
+
+  #comment_box textarea {
+    width: 45rem;
+    height: 10rem;
+  }
+
+  #comment_box label h3 {
+    font-size: 1.9rem;
+  }
+
+  #submit {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.7rem;
+  }
+
+  #miranda_priestly_image img {
+    height: 30rem;
+    width: 45rem;
+  }
+
+  #sign-off #thats-all {
+    height: 6rem;
+    width: 13rem;
+  }
+
+  #sign-off #xoxo {
+    height: 7rem;
+    width: 10rem;
+  }
+
+  #sign-off #mp-signature {
+    height: 6rem;
+    width: 25rem;
+  }
+}
