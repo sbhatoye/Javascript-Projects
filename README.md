@@ -25,11 +25,11 @@ I love reading a quotes and I wanted to design and develop a webpage that genera
 
 ### About 
 
-A website for a fashion magazine to rate and review seasonal collections. It features image carousels, rating counters and a comment box. 
+A fictional website for a prominent fashion magazine where user can rate and review seasonal collections. It features image carousels, rating counters and a comment box. 
 
 ### Inspiration
 
-'The Devil Wears Prada' has been one of my most favorite films and I wanted to create a fictional website where the user can act as Vogue's Fashion Editor, Miranda Priestly, and review the latest collection. 
+'The Devil Wears Prada' has been one of my most favorite films and I wanted to create a fictional website where the user can act as Vogue's Chief Fashion Editor, Miranda Priestly, and review the latest collection. 
 
 ### Design
 
