@@ -154,6 +154,9 @@ getComment = () => {
   newComment.style.borderBottom = "1px solid black";
   commentOutput.appendChild(newComment);
 
+  // Scroll to the bottom to display the newest comment
+  commentOutput.scrollTop = commentOutput.scrollHeight;
+
   // clear out comment box for next input
   commentInput.value = "";
 };
