@@ -13,7 +13,9 @@ I love reading a quotes and I wanted to design and develop a webpage that genera
 
 ### Site
 
-Site Link : (https://sunny-banoffee-0c72d7.netlify.app/)
+Site Link : https://sunny-banoffee-0c72d7.netlify.app/
+
+![Quote Screenshot](https://github.com/sbhatoye/Javascript-Projects/assets/121978043/47578356-22dc-4f7a-944d-a5af8f21d3fb)
 
 ### Key Learnings
 
@@ -43,7 +45,9 @@ Design created using Figma: [The Devil Wears Prada - Figma Design Link](https://
 
 ### Site
 
-Site Link : (https://cheerful-speculoos-3f2c8b.netlify.app/)
+Site Link : https://cheerful-speculoos-3f2c8b.netlify.app/
+
+![Webpage Screenshot](https://github.com/sbhatoye/Javascript-Projects/assets/121978043/d4afb730-ee6f-494d-9370-ff8617c18a02)
 
 ### Key Learnings
 
