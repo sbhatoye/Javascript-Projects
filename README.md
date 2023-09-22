@@ -1,7 +1,7 @@
 
 # JAVASCRIPT PROJECTS
 
-## 1) Random Quote Generator
+## 1) Quote of the Day
 
 ### About 
 
@@ -10,6 +10,10 @@ This is a webpage that generates a random quote on the click of a button.
 ### Inspiration
 
 I love reading a quotes and I wanted to design and develop a webpage that generates a random quote for the user.
+
+### Site
+
+Site Link : (https://sunny-banoffee-0c72d7.netlify.app/)
 
 ### Key Learnings
 
@@ -36,6 +40,10 @@ A fictional website for a prominent fashion magazine where user can rate and rev
 Design created using Figma: [The Devil Wears Prada - Figma Design Link](https://www.figma.com/file/drx3FOVGqKSgaIqJdfPgeS/The-Devil-Wears-Prada?type=design&mode=design&t=Gbcf8YMI0XleOoxS-1)
 
 ![Figma Design](https://github.com/sbhatoye/Javascript-Projects/assets/121978043/a013880f-f95b-487a-9f18-7d019859aff8)
+
+### Site
+
+Site Link : (https://cheerful-speculoos-3f2c8b.netlify.app/)
 
 ### Key Learnings
 
