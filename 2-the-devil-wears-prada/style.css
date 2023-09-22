@@ -249,12 +249,13 @@ nav a:hover {
   background-color: #cbdcf8;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 40rem;
   height: 25rem;
   margin-top: 4rem;
   border-radius: 10px;
+  padding-top: 2rem;
 }
 
 #comment_box textarea {
@@ -340,23 +341,35 @@ nav a:hover {
 
 /* Media Queries */
 
-/* mobile/tablet touch vs click queries */
 @media (min-width: 200px) and (max-width: 1023px) {
+  #logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* mobile/tablet touch vs click queries */
   /* no mouse click in mobile view */
   nav a:hover {
     color: #e73c35;
   }
 
-  #enter-button button:hover {
+  #enter_button button:hover {
     background-color: black;
     color: #e73c35;
     border: 2px solid #e73c35;
   }
 
-  #logo img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .counter button:hover {
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+  }
+
+  #submit:hover {
+    background-color: transparent;
+    color: #39074e;
+    border: 2px solid #39074e;
   }
 }
 
@@ -492,7 +505,7 @@ nav a:hover {
   }
 }
 
-@media (min-width: 550px) and (max-width: 600px) {
+@media (min-width: 551px) and (max-width: 600px) {
   .mood_images {
     height: 17rem;
     width: 29rem;
@@ -542,6 +555,10 @@ nav a:hover {
     margin-left: 2rem;
   }
 
+  #enter_button {
+    margin-bottom: 4rem;
+  }
+
   .mood_images {
     height: 20rem;
     width: 35rem;
@@ -549,7 +566,7 @@ nav a:hover {
 
   .counter {
     width: 11rem;
-    height: 15rem;
+    height: 12rem;
     margin-top: 1rem;
     margin-left: 0.7rem;
     margin-right: 0.7em;
@@ -577,18 +594,29 @@ nav a:hover {
     justify-content: center;
   }
 
+  .rating_heading {
+    margin-top: 1rem;
+  }
+
   #comment_box {
-    width: 35rem;
-    height: 20rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 33rem;
+    height: 15rem;
   }
 
   #comment_box textarea {
-    width: 28rem;
+    width: 26rem;
     height: 6rem;
+  }
+
+  #submit {
+    margin-top: 1rem;
   }
 
   .signature_container {
     flex-direction: column;
+    padding-top: 2rem;
   }
 
   #sign-off {
@@ -626,7 +654,7 @@ nav a:hover {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1023px) {
+@media (min-width: 901px) and (max-width: 1023px) {
   .mood_images {
     height: 26rem;
     width: 45rem;
@@ -673,7 +701,7 @@ nav a:hover {
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1300px) {
+@media (min-width: 1024px) and (max-width: 1540px) {
   .counter {
     width: 19.5rem;
     height: 19rem;
@@ -684,9 +712,23 @@ nav a:hover {
   .decrease {
     margin: 1rem 0.2rem;
   }
+
+  #comment_box {
+    width: 50rem;
+    height: 24rem;
+  }
+
+  #comment_box textarea {
+    width: 40rem;
+    height: 7rem;
+  }
+
+  #comment_box label h3 {
+    font-size: 1.4rem;
+  }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1541px) {
   #menu nav {
     font-size: 1.4rem;
   }
